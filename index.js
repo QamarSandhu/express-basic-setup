@@ -1,19 +1,16 @@
-const express = require("express");
-const app = express();
-app.use(express.json());
 const fs = require("fs");
 const path = require("path");
 
 const createFolder = () => {
-  const src = path.join(__dirname, "./src");
-  const controllers = path.join(__dirname, "./src/Controllers");
-  const models = path.join(__dirname, "./src/models");
-  const routes = path.join(__dirname, "./src/routes");
-  const views = path.join(__dirname, "./src/views");
-  const config = path.join(__dirname, "./src/config");
-  const configFile = path.join(__dirname, "./src/config/config.js");
-  const routeIndexFile = path.join(__dirname, "./src/routes/index.js");
-  const indexFile = path.join(__dirname, "./index.js");
+  const src = path.join(__dirname, "../../src");
+  const controllers = path.join(__dirname, "../../src/Controllers");
+  const models = path.join(__dirname, "../../src/models");
+  const routes = path.join(__dirname, "../../src/routes");
+  const views = path.join(__dirname, "../../src/views");
+  const config = path.join(__dirname, "../../src/config");
+  const configFile = path.join(__dirname, "../../src/config/config.js");
+  const routeIndexFile = path.join(__dirname, "../../src/routes/index.js");
+  const indexFile = path.join(__dirname, "../../index.js");
 
   const routesIndexText =
     'const express = require("express");const router = express.Router();module.exports = router;';
@@ -54,16 +51,4 @@ const createFolder = () => {
     });
   }
 };
-createFolder();
-app.get("/", (req, res) => {
-  res.status(200).json({
-    status: "success",
-    message: "Server running successfully",
-  });
-});
-const routes = require("./src/routes");
-const port = process.env.PORT || 5000;
-app.use(routes);
-app.listen(port, () => {
-  console.log(`Server is ready at ${port}`);
-});
+module.exports = { createFolder };
