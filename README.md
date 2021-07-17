@@ -7,8 +7,8 @@
      cd my-project
      npm init -y
      npm i express-startup-setup
-     touch server.js
      code .
+ #### create new file server.js
   
   ## Then open server.js file and write two lines of code given below
      const project=require('express-startup-setup')
