@@ -1,6 +1,6 @@
 {
-  "name": "express-initial-setup",
-  "version": "1.0.0",
+  "name": "express-startup-setup",
+  "version": "1.0.2",
   "description": "Basic setup to express mvc",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/QamarSandhu/express-basic-setup.git"
   },
   "keywords": [
-    "express-initial-setup"
+    "express-startup-setup"
   ],
   "bugs": {
     "url": "https://github.com/QamarSandhu/express-basic-setup/issues"

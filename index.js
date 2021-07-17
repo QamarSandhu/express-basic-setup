@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const createFolder = () => {
+const start = () => {
   const src = path.join(__dirname, "../../src");
   const controllers = path.join(__dirname, "../../src/Controllers");
   const models = path.join(__dirname, "../../src/models");
@@ -51,4 +51,4 @@ const createFolder = () => {
     });
   }
 };
-module.exports = { createFolder };
+module.exports = { start };
