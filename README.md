@@ -1,7 +1,6 @@
-# express-basic-setup
-## Here is easy way to setup your express project
+# express-startup-setup
 
-# Steps to use this package
+### Steps to use this package
 
  ## In terminal
      mkdir my-project
@@ -17,8 +16,6 @@
      
   ## Then run in terminal
      node server.js
-     
-  ### The src and other folder will be create
   
   #### your project has been initialized 
   #### now open package.json and paste this script
