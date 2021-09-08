@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "npm i express && npm i fs && npm i path && node index.js"
+    "start": "npm i  && node index.js"
   },
   "author": "QamarSandhu",
   "license": "ISC",

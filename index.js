@@ -3,7 +3,7 @@ const path = require("path");
 
 const start = () => {
   const src = path.join(__dirname, "../../src");
-  const controllers = path.join(__dirname, "../../src/Controllers");
+  const controllers = path.join(__dirname, "../../src/controllers");
   const models = path.join(__dirname, "../../src/models");
   const routes = path.join(__dirname, "../../src/routes");
   const views = path.join(__dirname, "../../src/views");
